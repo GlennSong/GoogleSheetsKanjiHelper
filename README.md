@@ -54,3 +54,5 @@ Here's how:
 
 As long as I'm finding the tools useful I'll fix bugs and issues with it. If you want to discuss new features, I'm game to listen, but I built these tools for my needs, so any new implementation will probably be low priority.
 
+# Links
+[Documentation for kanjiapi](https://kanjiapi.dev/#!/documentation)
