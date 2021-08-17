@@ -1,3 +1,13 @@
+/* 
+Kanji Helper tools for Google Spreadsheet 
+Generates a list of unique kanji from a chunk of text as well as a partial list of vocabulary words based on the text. The vocabulary words are kanji only. Anything that's a mixture of kana and kanji such as verbs or whatever don't show up in the list right now.
+Author: Glenn Song
+Date: 8/16/2021
+Version 0.1 
+
+Could be buggy!
+*/
+
 /**
  To get product of three numbers
  
