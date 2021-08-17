@@ -55,4 +55,23 @@ Here's how:
 As long as I'm finding the tools useful I'll fix bugs and issues with it. If you want to discuss new features, I'm game to listen, but I built these tools for my needs, so any new implementation will probably be low priority.
 
 # Links
-[Documentation for kanjiapi](https://kanjiapi.dev/#!/documentation)
+
+## kanjiapi Links
+* [Documentation for kanjiapi](https://kanjiapi.dev/#!/documentation)
+* [kanjiapi github](https://github.com/onlyskin/kanjiapi.dev)
+
+## Javascript for Japanese Characters
+* [Japanese Language Unicode Info](https://kairozu.github.io/updates/cleaning-jp-text)
+* [How to deal with Unicode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt)
+* [More Unicode Stuff](https://tutorial.eyehunts.com/js/javascript-number-to-unicode-example-code/)
+* [StackOverflow: How to deep copy a string](https://stackoverflow.com/questions/31712808/how-to-force-javascript-to-deep-copy-a-string)
+
+## Google Spreadsheet Coding Links
+* [Video that taught me how to make a google spreadsheet add-on](https://www.youtube.com/watch?v=6QhEXOwC6pA)
+* [JMDict Project](http://edrdg.org/jmdict/j_jmdict.html)
+* [Returning Spreadsheet row/col data from functions](https://spreadsheet.dev/returning-values-from-custom-functions-in-google-sheets)
+
+## Anki Links
+* [Anki Spreadsheet Import Plus Add-on](https://ankiweb.net/shared/info/716643677)
+* [How to Style Anki Card Templates](https://www.youtube.com/watch?v=HgKDRTTTnh4)
+* 
