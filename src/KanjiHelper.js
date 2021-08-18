@@ -8,18 +8,6 @@ Version 0.1
 Could be buggy!
 */
 
-/**
- To get product of three numbers
- 
- @param num1 Enter the first number
- @param num2 Enter the second number
- @param num3 Enter the third number
- @customfunction
- */
-function testfunc(num1, num2, num3) {
-  return num1 * num2 * num3;  
-}
-
 const kMinWordLen = 2;
 
 /**
@@ -308,15 +296,42 @@ function buildKanjiTable(textStr)
   output.push(["kanji", "konyomi", "onyomi", "grade", "definition", "count"]);
 
   var kanjiDic = buildKanjiTableData(textStr);  
+  var statDic = {};
+  var kanjiCount = 0; //count as we loop
   for(var key in kanjiDic) 
   {
     var kanjiInfo = kanjiDic[key].kanjiInfo;
-  
+
+    //compile some stats based on the grade so I can see where most of the kanji liess.
+    var grade = kanjiInfo[2];
+    if(!statDic[grade]) 
+    {
+      statDic[grade] = {count: 1};
+    }
+    else 
+    {
+      statDic[grade].count++;
+    }
+
     //add the kanji character to the front
     kanjiInfo.unshift(key);
     kanjiInfo.push(kanjiDic[key].count);
     output.push(kanjiInfo);
+    kanjiCount++;
   }
+
+  //figure out percentage of kanji for each school grade level.
+  output.push([]);
+  output.push(['Kanji Grade Stats']);
+  // var totalKanjiFound = Object.keys(kanjiDic).length;
+  var statKeys = Object.keys(statDic);
+  statKeys.sort();
+  for(var statIdx=0; statIdx<statKeys.length; ++statIdx)
+  {
+    var key = statKeys[statIdx];
+    output.push([key, statDic[key].count, statDic[key].count/kanjiCount]);
+  }
+  output.push(['Total Kanji', kanjiCount]);
 
   return output;
 }
